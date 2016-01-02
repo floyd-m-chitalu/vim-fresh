@@ -90,7 +90,7 @@ if has("gui_running") || &t_Co == 256
   "" }}}
 
   "" Highlight Groups {{{
-  call s:hi("ColorColumn", "", "", "")
+  call s:hi("ColorColumn", "", "", "reverse")
   call s:hi("Conceal", "", "", "")
   call s:hi("Cursor", "", "", "reverse")
   call s:hi("CursorIM", "", "", "")
@@ -119,7 +119,7 @@ if has("gui_running") || &t_Co == 256
   call s:hi("PmenuSbar", "", "", "")
   call s:hi("PmenuThumb", "", "", "")
   call s:hi("Question", "", "", "")
-  call s:hi("Search", "11", "", "")
+  call s:hi("Search", "11", "", "italics")
   call s:hi("SpecialKey", "", "", "")
   call s:hi("SpellBad", "160", "", "")
   call s:hi("SpellCap", "12", "", "")
@@ -144,7 +144,7 @@ if has("gui_running") || &t_Co == 256
   call s:hi("Comment", "8", "", "")
 
   call s:hi("Constant", "162", "", "")
-  call s:hi("String", "173", "", "")
+  call s:hi("String", "173", "", "italics")
   call s:hi("Character", "221", "", "")
   call s:hi("Number", "", "", "")
   call s:hi("Boolean", "", "", "")
