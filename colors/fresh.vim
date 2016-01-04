@@ -1,4 +1,4 @@
-set background=dark
+set background=light
 if exists("syntax_on")
   syntax reset
 endif
@@ -89,13 +89,16 @@ if has("gui_running") || &t_Co == 256
   endfunction
   "" }}}
 
+
+" Possible attributes: bold, underline, reverse, italic, none
+
   "" Highlight Groups {{{
-  call s:hi("ColorColumn", "", "", "reverse")
+  call s:hi("ColorColumn", "12", "", "reverse")
   call s:hi("Conceal", "", "", "")
   call s:hi("Cursor", "", "", "reverse")
   call s:hi("CursorIM", "", "", "")
-  call s:hi("CursorColumn", "235", "", "")
-  call s:hi("CursorLine", "", "", "")
+  call s:hi("CursorColumn", "", "", "")
+  call s:hi("CursorLine", "", "235", "")
   call s:hi("Directory", "", "", "")
   call s:hi("DiffAdd", "2", "236", "")
   call s:hi("DiffChange", "", "", "")
@@ -119,7 +122,7 @@ if has("gui_running") || &t_Co == 256
   call s:hi("PmenuSbar", "", "", "")
   call s:hi("PmenuThumb", "", "", "")
   call s:hi("Question", "", "", "")
-  call s:hi("Search", "11", "", "italics")
+  call s:hi("Search", "11", "", "italic")
   call s:hi("SpecialKey", "", "", "")
   call s:hi("SpellBad", "160", "", "")
   call s:hi("SpellCap", "12", "", "")
@@ -144,22 +147,22 @@ if has("gui_running") || &t_Co == 256
   call s:hi("Comment", "8", "", "")
 
   call s:hi("Constant", "162", "", "")
-  call s:hi("String", "173", "", "italics")
-  call s:hi("Character", "221", "", "")
-  call s:hi("Number", "", "", "")
+  call s:hi("String", "173", "", "italic")
+  call s:hi("Character", "221", "", "italic")
+  call s:hi("Number", "163", "", "")
   call s:hi("Boolean", "", "", "")
-  call s:hi("Float", "", "", "")
+  call s:hi("Float", "163", "", "")
 
-  call s:hi("Identifier", "60", "", "")
-  call s:hi("Function", "71", "", "")
+  call s:hi("Identifier", "60", "", "italic")
+  call s:hi("Function", "71", "", "italic")
 
-  call s:hi("Statement", "30", "", "")
-  call s:hi("Conditional", "69", "", "")
+  call s:hi("Statement", "30", "", "italic")
+  call s:hi("Conditional", "69", "", "bold")
   call s:hi("Repeat", "69", "", "")
-  call s:hi("Label", "69", "", "")
+  call s:hi("Label", "69", "", "bold")
   call s:hi("Operator", "166", "", "")
-  call s:hi("Keyword", "", "", "")
-  call s:hi("Exception", "", "", "")
+  call s:hi("Keyword", "", "", "bold")
+  call s:hi("Exception", "", "", "bold")
 
   call s:hi("PreProc", "102", "", "")
   call s:hi("Include", "66", "", "")
@@ -167,10 +170,10 @@ if has("gui_running") || &t_Co == 256
   call s:hi("Macro", "", "", "")
   call s:hi("PreCondit", "61", "", "")
 
-  call s:hi("Type", "73", "", "")
-  call s:hi("StorageClass", "66", "", "")
-  call s:hi("Structure", "69", "", "")
-  call s:hi("Typedef", "73", "", "")
+  call s:hi("Type", "73", "", "bold")
+  call s:hi("StorageClass", "66", "", "italic")
+  call s:hi("Structure", "69", "", "bold")
+  call s:hi("Typedef", "73", "", "bold")
 
   call s:hi("Special", "179", "", "")
   call s:hi("SpecialChar", "", "", "")
